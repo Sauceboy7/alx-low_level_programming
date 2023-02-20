@@ -13,6 +13,7 @@
 
 int main(void)
 {
+
 int n;
 int l;
 
