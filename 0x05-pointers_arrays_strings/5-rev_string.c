@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
 * rev_string - Reverses a string
 * @s: The string to be modified
@@ -23,4 +22,5 @@ tmp = s[index];
 s[index] = s[len - 1];
 s[len - index - 1] = tmp;
 }
+
 }
