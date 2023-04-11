@@ -1,23 +1,22 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-  * flip_bits - function that count bits
-  *  thats  need to flip to get from one number to another
-  * @n: first number
-  * @m: second number
-  * Return: number of flips to get from one number to the other
-  */
-
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	int count = 0, check;
+    unsigned int n;
 
-	check = (n ^ m);
-	while (check)
-	{
-		count += (check & 1);
-		check >>= 1;
-	}
-	return (count);
-
+    n = flip_bits(1024, 1);
+    printf("%u\n", n);
+    n = flip_bits(402, 98);
+    printf("%u\n", n);
+    n = flip_bits(1024, 3);
+    printf("%u\n", n);
+    n = flip_bits(1024, 1025);
+    printf("%u\n", n);
+    return (0);
 }
